@@ -1,5 +1,7 @@
 from brownie import FundMe
+
 from scripts.helpful_scripts import get_account
+
 
 
 def fund():
@@ -10,6 +12,7 @@ def fund():
     print(f"the current fee is {entrance_fee}")
     print("funding ...")
     fund_me.fund({"from": account, "value": entrance_fee})
+
 
 
 def withdrow():
