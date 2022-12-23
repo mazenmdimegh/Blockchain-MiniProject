@@ -8,6 +8,7 @@ DECIMALS = 18
 STARTING_VALUE = 2000
 
 
+
 def get_account():
     if (
         network.show_active() in LOCAL_BLOCKCHAIN_ENVIRONMENTS
@@ -16,6 +17,7 @@ def get_account():
         return accounts[0]
     else:
         return accounts.add(config["wallets"]["from_key"])
+
 
 
 def deploy_mocks():
